@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Awesome font link -->
+     <script src="https://kit.fontawesome.com/79b83474e2.js" crossorigin="anonymous"></script>
+     <!-- css link -->
+     <link rel="stylesheet" href="style.css">
+     <!-- favicon logo -->
+     <link rel="shortcut icon" href="images/logocar.png" type="image/x-icon">
+     <!-- website title -->
+    <title>Rentaly</title>
+</head>
+<body>
+  <!-- HEADER-->
+  <header>
+    <!-- top bar -->
+    <section class="top_bar felx_styling">
+       <div class="right_side flex">
+        <div class="contact">
+            <i class="fa-solid fa-phone-volume"></i> +208 333 9296 
+        </div>
+        <div class="email">
+            <i class="fa-solid fa-envelope"></i> contact@rentaly.com
+        </div>
+        <div class="time">
+            <i class="fa-solid fa-clock-rotate-left"></i> Mon - Fri 08.00 - 18.00
+        </div>
+       </div>
+       <div class="socials flex">
+        <div class="social_container flex">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        </div>
+        <div class="darkmode_switch" onclick="darkMode()">
+            <i class="fa-solid fa-cloud-moon"></i>
+           </div>
+       </div>
+    </section>
+
+
+    
+    <!-- navigation -->
+    <nav class="felx_styling flex">
+        <!-- logo -->
+        <label class="logo flex"><img src="images/logocar.png" alt="logo"><span>Rentaly</span></label>
+        <ul class="flex">
+            <li class="menu" onclick="showDropdown()"><a href="#">rent a car <i class="fa-solid fa-angle-down"></i></a>
+                <ul id="myDropdown" class="drop_down">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">home</a></li>
+                </ul>
+            </li>
+            <li><a href="#">brands <i class="fa-solid fa-angle-down"></i></a></li>
+            <li><a href="#">yacht rental <i class="fa-solid fa-angle-down"></i></a></li>
+            <li><a href="#">promotion</a></li>
+            <li><a href="#">contact us</a></li>
+        </ul>
+        <div class="log_btn flex">
+    <a href="#" class="login" onclick="showLogin()">login</a>
+    <!-- login form -->
+    <!-- <div class="loginform flex">
+        <form>
+            <input type="text" placeholder="userName">
+            <input type="password" placeholder="password">
+        </form>
+        <button type="submit">login</button>
+    </div> -->
+    <button class="button">Get Started &rightarrow;</button>
+    </div>
+    <i class="fa-solid fa-bars-staggered"></i>
+    </nav>
+
+
+    <!-- hero section -->
+    <section class="hero">
+        <div class="content">
+            <p>rent a car in <span>Dubai</span></p>
+            <h2>find your dreams car within a minute</h2>
+            <small>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aspernatur ab tenetur, fugiat odio rem provident voluptas
+            </small>
+            <div class="content_img">
+                <img src="images/png-transparent-itunes-app-store-apple-logo-apple-text-rectangle-logo-removebg-preview.png" alt="app store">
+                <img src="images/png-transparent-google-play-logo-google-play-computer-icons-app-store-google-text-logo-sign-removebg-preview.png" alt="google store">
+            </div>
+        </div>
+
+       
+    </section>
+  </header>
+
+  <!-- header ends -->
+
+<!-- main body section -->
+<main>
+    <section class="search_bar flex">
+        <i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="pick up location...">
+      <div class="date flex">
+        <i class="fa-solid fa-calendar-days"></i>
+       <div class="date_content flex">
+        <small>pick up date</small>
+        <label for="date">mon 12 oct</label>
+       </div>
+      </div>
+
+      <div class="date flex">
+        <i class="fa-solid fa-clock-rotate-left"></i>
+       <div class="date_content flex">
+        <small>time</small>
+        <label for="date">10:00pm</label>
+       </div>
+      </div>
+
+      <div class="date flex">
+        <i class="fa-solid fa-calendar-days"></i>
+       <div class="date_content flex">
+        <small>drop of date</small>
+        <label for="date">mon 12 oct</label>
+       </div>
+      </div>
+
+      <div class="date flex">
+        <i class="fa-solid fa-clock-rotate-left"></i>
+       <div class="date_content flex">
+        <small>time</small>
+        <label for="date">10:00pm</label>
+       </div>
+      </div>
+
+      <div class="search_logo">
+        <h2>search</h2>
+      </div>
+    </section>
+
+    <!-- about us section -->
+    <section class="about_us">
+        <div class="contents">
+            <h3>why you should <span>rent a car</span> with us</h3>
+        </div>
+        <div class="rating">
+            <div class="date flex">
+                <h1>450</h1>
+               <div class="rating_content date_content flex">
+                <small>rental</small>
+                <label for="date">companies</label>
+               </div>
+              </div>
+        
+              <div class="date flex">
+                <h1>315</h1>
+               <div class="rating_content date_content flex">
+                <small>rental cars</small>
+                <label for="date">registered</label>
+               </div>
+              </div>
+        
+              <div class="date flex">
+                <h1>35k</h1>
+               <div class="rating_content date_content flex">
+                <small>satisfy</small>
+                <label for="date">client</label>
+               </div>
+              </div>
+        
+              <div class="rating_content date flex">
+                <h1>60</h1>
+               <div class="date_content flex">
+                <small>seconds</small>
+                <label for="date">average</label>
+                <label for="date">booking time</label>
+               </div>
+              </div>
+        </div>
+    </section>
+  
+    <!-- service -->
+    <section class="service">
+        <h2>find car rental and drivers near you <select>
+            <option value="select city">select city</option>
+        </select></h2>
+        <div class="card_container flex">
+
+            <div class="card flex">
+                <img src="images/card1.png" alt="card">
+                <div class="card_content flex">
+                    <label for="date">luxury</label>
+                    <small>560 cars</small>
+                </div>
+            </div>
+
+            <div class="card flex">
+                <img src="images/card6.png" alt="card">
+                <div class="card_content flex">
+                    <label for="date">sport</label>
+                    <small>480 cars</small>
+                </div>
+            </div>
+
+            <div class="card flex">
+                <img src="images/card3.png" alt="card">
+                <div class="card_content flex">
+                    <label for="date">suv</label>
+                    <small>780 cars</small>
+                </div>
+            </div>
+
+            <div class="card flex">
+                <img src="images/car01.png" alt="card">
+                <div class="card_content flex">
+                    <label for="date">monthly</label>
+                    <small>560 cars</small>
+                </div>
+            </div>
+            <div class="card flex">
+                <img src="images/card2.png" alt="card">
+                <div class="card_content flex">
+                    <label for="date">high price</label>
+                    <small>560 cars</small>
+                </div>
+            </div>
+            <div class="card flex">
+                <img src="images/card5.png" alt="card">
+                <div class="card_content flex">
+                    <label for="date">car with driver</label>
+                    <small>560 cars</small>
+                </div>
+            </div>
+            <div class="card flex">
+                <img src="images/card7.png" alt="card">
+                <div class="card_content flex">
+                    <label for="date">luxury</label>
+                    <small>768 cars</small>
+                </div>
+            </div>
+            <div class="card flex">
+                <img src="images/card8.png" alt="card">
+                <div class="card_content flex">
+                    <label for="date">electric</label>
+                    <small>560 cars</small>
+                </div>
+            </div>
+            
+            <button class="btn button">Load More &rightarrow;</button>
+        </div>
+    </section>
+
+    <!-- booking -->
+    <section class="booking flex">
+        <div class="book_content flex">
+            <h1>book your suitable car</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, adipisci</p>
+            <div class="sections">
+                <select>
+                    <option value="price">price</option>
+                </select>
+                <select>
+                    <option value="price">price</option>
+                </select>
+                <select>
+                    <option value="location">location</option>
+                </select>
+                <select>
+                    <option value="color">color</option>
+                </select>
+                <select>
+                    <option value="rating">rating</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- card slider -->
+        <div class="card_slider flex">
+
+
+            <div class="cards_container">
+                <div class="inner">
+                    <h3>land cruser</h3>
+               <div class="img"> <img src="images/3.png" alt="car"></div>
+                <p>$80<small>/day</small></p>
+                <div class="star">
+                   <div class="star_container">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                   </div>
+                    <p>45 reviews</p>
+                </div>
+
+                <div class="card_symbols">
+
+                    <div class="container flex">
+                        <i class="fa-solid fa-chair"></i>
+                        <small>4 seat</small>
+                    </div>
+
+                    <div class="container flex">
+                        <i class="fa-solid fa-snowflake"></i>
+                        <small>AC</small>
+                    </div>
+
+                    <div class="container flex">
+                        <i class="fa-brands fa-searchengin"></i>
+                        <small>auto</small>
+                    </div>
+
+                    <div class="container flex">
+                        <i class="fa-solid fa-gas-pump"></i>
+                        <small>petrol</small>
+                    </div>
+
+                </div>
+                </div>
+                <!-- button -->
+                <button class="slider_btn">Rent Now</button>
+            </div>
+            <div class="cards_container">
+                <div class="inner">
+                    <h3>land cruser</h3>
+               <div class="img"> <img src="images/4.png" alt="car"></div>
+                <p>$80<small>/day</small></p>
+                <div class="star">
+                   <div class="star_container">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                   </div>
+                    <p>45 reviews</p>
+                </div>
+
+                <div class="card_symbols">
+
+                    <div class="container flex">
+                        <i class="fa-solid fa-chair"></i>
+                        <small>4 seat</small>
+                    </div>
+
+                    <div class="container flex">
+                        <i class="fa-solid fa-snowflake"></i>
+                        <small>AC</small>
+                    </div>
+
+                    <div class="container flex">
+                        <i class="fa-brands fa-searchengin"></i>
+                        <small>auto</small>
+                    </div>
+
+                    <div class="container flex">
+                        <i class="fa-solid fa-gas-pump"></i>
+                        <small>petrol</small>
+                    </div>
+
+                </div>
+                </div>
+                <!-- button -->
+                <button class="slider_btn">Rent Now</button>
+            </div>
+            <div class="cards_container">
+                <div class="inner">
+                    <h3>land cruser</h3>
+               <div class="img"> <img src="images/3.png" alt="car"></div>
+                <p>$80<small>/day</small></p>
+                <div class="star">
+                   <div class="star_container">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                   </div>
+                    <p>45 reviews</p>
+                </div>
+
+                <div class="card_symbols">
+
+                    <div class="container flex">
+                        <i class="fa-solid fa-chair"></i>
+                        <small>4 seat</small>
+                    </div>
+
+                    <div class="container flex">
+                        <i class="fa-solid fa-snowflake"></i>
+                        <small>AC</small>
+                    </div>
+
+                    <div class="container flex">
+                        <i class="fa-brands fa-searchengin"></i>
+                        <small>auto</small>
+                    </div>
+
+                    <div class="container flex">
+                        <i class="fa-solid fa-gas-pump"></i>
+                        <small>petrol</small>
+                    </div>
+
+                </div>
+                </div>
+                <!-- button -->
+                <button class="slider_btn">Rent Now</button>
+            </div>
+            <div class="cards_container">
+                <div class="inner">
+                    <h3>land cruser</h3>
+               <div class="img"> <img src="images/2.png" alt="car"></div>
+                <p>$80<small>/day</small></p>
+                <div class="star">
+                   <div class="star_container">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                   </div>
+                    <p>45 reviews</p>
+                </div>
+
+                <div class="card_symbols">
+
+                    <div class="container flex">
+                        <i class="fa-solid fa-chair"></i>
+                        <small>4 seat</small>
+                    </div>
+
+                    <div class="container flex">
+                        <i class="fa-solid fa-snowflake"></i>
+                        <small>AC</small>
+                    </div>
+
+                    <div class="container flex">
+                        <i class="fa-brands fa-searchengin"></i>
+                        <small>auto</small>
+                    </div>
+
+                    <div class="container flex">
+                        <i class="fa-solid fa-gas-pump"></i>
+                        <small>petrol</small>
+                    </div>
+
+                </div>
+                </div>
+                <!-- button -->
+                <button class="slider_btn">Rent Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- limited offers section -->
+
+    <section class="offers flex">
+        <img src="images/banner.jpg" alt="car banner">
+        <div class="offers_content content">
+            <p>Limited offer</p>
+            <h2><span>30%</span> of for first time rent a car</h2>
+            <button class="button">Get Started &rightarrow;</button>
+        </div>
+    </section>
+
+
+    <!-- explore section -->
+    <section class="explore_section flex">
+        <img src="images/car_banner.png" alt="car banner">
+        <div class="explore_content">
+            <p>explore our first class service</p>
+            <h1>feel the best experience <span>rental</span> deals</h1>
+            <small class="brand_small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium architecto distinctio exercitationem.</small>
+
+            <div class="brand_service flex">
+                <div class="containers flex">
+                    <!-- 1 -->
+                <div class="brand_container flex">
+                    <i class="fa-solid fa-car"></i>
+                    <div class="brand_contents">
+                        <h3>variety of brands</h3>
+                        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.</small>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="brand_container flex">
+                    <i class="fa-solid fa-person-walking-luggage"></i>
+                    <div class="brand_contents">
+                        <h3>Quality Driver</h3>
+                        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.</small>
+                    </div>
+                </div>
+                </div>
+                
+
+                <div class="containers flex">
+                    <!-- 3 -->
+                <div class="brand_container flex">
+                    <i class="fa-solid fa-passport"></i>
+                    <div class="brand_contents">
+                        <h3>Free Cancellation</h3>
+                        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.</small>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="brand_container flex">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <div class="brand_contents">
+                        <h3>Best Security</h3>
+                        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.</small>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- booking -->
+    <section class="booking book">
+        <div class="book_content booking_content">
+            <h1>book your suitable car</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, adipisci</p>
+            <div class="sections">
+                <select>
+                    <option value="price">price</option>
+                </select>
+                <select>
+                    <option value="price">price</option>
+                </select>
+                <select>
+                    <option value="location">location</option>
+                </select>
+                <select>
+                    <option value="color">color</option>
+                </select>
+                <select>
+                    <option value="rating">rating</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- card slider -->
+        <div class="card_slider flex">
+
+
+            <div class="cards_container">
+                <div class="inner">
+                    <h3>land cruser</h3>
+               <div class="img"> <img src="images/3.png" alt="car"></div>
+                <p>$80<small>/day</small></p>
+                <div class="star">
+                   <div class="star_container">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                   </div>
+                    <p>45 reviews</p>
+                </div>
+
+                <div class="card_symbols">
+
+                    <div class="container flex">
+                        <i class="fa-solid fa-chair"></i>
+                        <small>4 seat</small>
+                    </div>
+
+                    <div class="container flex">
+                        <i class="fa-solid fa-snowflake"></i>
+                        <small>AC</small>
+                    </div>
+
+                    <div class="container flex">
+                        <i class="fa-brands fa-searchengin"></i>
+                        <small>auto</small>
+                    </div>
+
+                    <div class="container flex">
+                        <i class="fa-solid fa-gas-pump"></i>
+                        <small>petrol</small>
+                    </div>
+
+                </div>
+                </div>
+                <!-- button -->
+                <button class="slider_btn">Rent Now</button>
+            </div>
+            <div class="cards_container">
+                <div class="inner">
+                    <h3>Allien 15</h3>
+               <div class="img"> <img src="images/4.png" alt="car"></div>
+                <p>$70<small>/day</small></p>
+                <div class="star">
+                   <div class="star_container">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                   </div>
+                    <p>45 reviews</p>
+                </div>
+
+                <div class="card_symbols">
+
+                    <div class="container flex">
+                        <i class="fa-solid fa-chair"></i>
+                        <small>4 seat</small>
+                    </div>
+
+                    <div class="container flex">
+                        <i class="fa-solid fa-snowflake"></i>
+                        <small>AC</small>
+                    </div>
+
+                    <div class="container flex">
+                        <i class="fa-brands fa-searchengin"></i>
+                        <small>auto</small>
+                    </div>
+
+                    <div class="container flex">
+                        <i class="fa-solid fa-gas-pump"></i>
+                        <small>petrol</small>
+                    </div>
+
+                </div>
+                </div>
+                <!-- button -->
+                <button class="slider_btn">Rent Now</button>
+            </div>
+            <div class="cards_container">
+                <div class="inner">
+                    <h3>BMW</h3>
+               <div class="img"> <img src="images/3.png" alt="car"></div>
+                <p>$120<small>/day</small></p>
+                <div class="star">
+                   <div class="star_container">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                   </div>
+                    <p>45 reviews</p>
+                </div>
+
+                <div class="card_symbols">
+
+                    <div class="container flex">
+                        <i class="fa-solid fa-chair"></i>
+                        <small>4 seat</small>
+                    </div>
+
+                    <div class="container flex">
+                        <i class="fa-solid fa-snowflake"></i>
+                        <small>AC</small>
+                    </div>
+
+                    <div class="container flex">
+                        <i class="fa-brands fa-searchengin"></i>
+                        <small>auto</small>
+                    </div>
+
+                    <div class="container flex">
+                        <i class="fa-solid fa-gas-pump"></i>
+                        <small>petrol</small>
+                    </div>
+
+                </div>
+                </div>
+                <!-- button -->
+                <button class="slider_btn">Rent Now</button>
+            </div>
+            <div class="cards_container">
+                <div class="inner">
+                    <h3>Honda Jazz</h3>
+               <div class="img"> <img src="images/2.png" alt="car"></div>
+                <p>$100<small>/day</small></p>
+                <div class="star">
+                   <div class="star_container">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                   </div>
+                    <p>45 reviews</p>
+                </div>
+
+                <div class="card_symbols">
+
+                    <div class="container flex">
+                        <i class="fa-solid fa-chair"></i>
+                        <small>4 seat</small>
+                    </div>
+
+                    <div class="container flex">
+                        <i class="fa-solid fa-snowflake"></i>
+                        <small>AC</small>
+                    </div>
+
+                    <div class="container flex">
+                        <i class="fa-brands fa-searchengin"></i>
+                        <small>auto</small>
+                    </div>
+
+                    <div class="container flex">
+                        <i class="fa-solid fa-gas-pump"></i>
+                        <small>petrol</small>
+                    </div>
+
+                </div>
+                </div>
+                <!-- button -->
+                <button class="slider_btn">Rent Now</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- testimonial section -->
+    <section class="testimonial flex">
+        <div class="testimonial_content flex">
+            <p class="title">customers story</p>
+            <h1>5000+ happy customers with their best rental experience</h1>
+            <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias asperiores eligendi illum, pariatur iste esse?</small>
+            <div class="star">
+                <div class="star_container">
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                </div>
+                 <p>4.5(1295) star reveiws from client on <span>trustpilot</span></p>
+             </div>
+        </div>
+
+        <div class="testimonial_cards cards flex">
+            <!-- 1 -->
+            <div class="testimonial_card_container card_container flex">
+                <img src="images/person3.jpg" alt="person">
+                <h3>esther howard</h3>
+                <div class="star">
+                    <div class="star_container">
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                    </div>
+                 </div>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt fuga veritatis, vero deleniti sed alias! Distinctio voluptatem explicabo eos delectus?</p>
+            </div>
+
+            <!-- 3 -->
+            <div class="testimonial_card_container card_container flex">
+                <img src="images/person1.jpg" alt="person">
+                <h3>esther howard</h3>
+                <div class="star">
+                    <div class="star_container">
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                    </div>
+                 </div>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam magni, vel deserunt saepe reiciendis eos illum aut nostrum incidunt enim modi alias illo quis ducimus repudiandae ipsam necessitatibus ratione id sed, ipsa quisquam animi repellat? Eaque, dignissimos!</p>
+            </div>
+            <!-- 2 -->
+            <div class="testimonial_card_container card_container flex">
+                <img src="images/person2.jpg" alt="person">
+                <h3>esther howard</h3>
+                <div class="star">
+                    <div class="star_container">
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                    </div>
+                 </div>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt fuga veritatis, vero deleniti sed alias! Distinctio voluptatem explicabo eos delectus?</p>
+            </div>
+            
+        </div>
+    </section>
+
+<!-- FAQ -->
+<section class="FAQ flex">
+    <div class="testimonial_content flex">
+        <h1>Frequently asked questions</h1>
+        <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias asperiores eligendi illum, pariatur iste esse?</small>
+    </div>
+    <div class="accordion">
+        <div class="accordion-content">
+            <header>
+                <span class="title">What do you mean by Accordion?</span>
+                <i class="fa-solid fa-plus"></i>
+            </header>
+            <p class="description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nobis ut perspiciatis minima quidem nisi, obcaecati, delectus consequatur fuga nostrum iusto ipsam ducimus quibusdam possimus. Maiores non enim numquam voluptatem?
+            </p>
+        </div><br>
+        <div class="accordion-content">
+            <header>
+                <span class="title">What do you mean by Accordion?</span>
+                <i class="fa-solid fa-plus"></i>
+            </header>
+            <p class="description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nobis ut perspiciatis minima quidem nisi, obcaecati, delectus consequatur fuga nostrum iusto ipsam ducimus quibusdam possimus. Maiores non enim numquam voluptatem?
+            </p>
+        </div><br>
+        <div class="accordion-content">
+            <header>
+                <span class="title">What do you mean by Accordion?</span>
+                <i class="fa-solid fa-plus"></i>
+            </header>
+            <p class="description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nobis ut perspiciatis minima quidem nisi, obcaecati, delectus consequatur fuga nostrum iusto ipsam ducimus quibusdam possimus. Maiores non enim numquam voluptatem?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto neque, sed inventore illum ut quis ducimus deleniti temporibus maiores? At nisi sed pariatur cupiditate quidem quod adipisci aut, eos quis minima voluptates non veniam ipsam quasi architecto ducimus error eum id ab, suscipit doloribus, ut accusantium consequuntur voluptate! Unde, hic sed rerum officia totam id libero officiis nihil rem sequi porro labore praesentium repudiandae a blanditiis molestias nisi beatae natus! Ea, ut voluptates, natus harum nesciunt odio hic eveniet reprehenderit veritatis, possimus tempora magni soluta eaque quidem neque maxime nostrum sapiente commodi? Earum ex cumque cupiditate dicta, tempora temporibus quaerat.
+            </p>
+        </div><br>
+        <div class="accordion-content">
+            <header>
+                <span class="title">What do you mean by Accordion?</span>
+                <i class="fa-solid fa-plus"></i>
+            </header>
+            <p class="description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nobis ut perspiciatis minima quidem nisi, obcaecati, delectus consequatur fuga nostrum iusto ipsam ducimus quibusdam possimus. Maiores non enim numquam voluptatem?
+            </p>
+        </div>
+    </div>
+
+</section>
+
+
+    <!-- download section -->
+    <section class="downloads flex">
+        <div class="downloads_content">
+            <h2>download the free car rental app</h2>
+            <small>
+                Lorem, ipsum dolor sit amet consectetur adipisicing 
+            </small>
+            <div class="content_img">
+                <img src="images/png-transparent-itunes-app-store-apple-logo-apple-text-rectangle-logo-removebg-preview.png" alt="app store">
+                <img src="images/png-transparent-google-play-logo-google-play-computer-icons-app-store-google-text-logo-sign-removebg-preview.png" alt="google store">
+            </div>
+        </div>
+        <div class="download_img">
+        <img src="images/app.png" alt="car mobile">
+        </div>
+    </section>
+</main>
+
+
+
+ <!-- footer -->
+ <footer>
+    <section class="upper_footer">
+     <article class="sector logo_sector">
+         <!-- logo -->
+     <label class="logo">Pix<i class="fa-solid fa-republican"></i>l<span>Phant</span></label>
+        <p>our vision is to provide convenience and help increase your sales business</p>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+    </article>
+    <article class="sector">
+        <ul>
+            <li>product photo editing</li>
+            <li>background removal service</li>
+            <li>color correction service</li>
+            <li>editorialPhoto Editing</li>
+            <li>Fashion Photo editing</li>
+            <li>clipping path service</li>
+            <li>ghost mannequin service</li>
+            <li>product photo retouching</li>
+            <li>skin retouching servoce</li>
+            <li>shadow adding service</li>
+            <li>Ai Backgroud removal</li>
+        </ul>
+    </article>
+    <article class="sector">
+        <ul>
+            <li>contact us</li>
+            <li>pricing</li>
+            <li>referral program</li>
+            <li>FAQS</li>
+            <li>Blog</li>
+            <li>Legal</li>
+            <li>Privacy & Policy</li>
+            <li>terms & condition</li>
+        </ul>
+    </article>
+    <article class="sector">
+        <ul>
+            <li>login</li>
+            <li>signup</li>
+            <li>for studio</li>
+            <li>CSR</li>
+            <li>about</li>
+        </ul>
+     </article>
+    </section>
+ 
+    <section class="bottom_footer">
+     <div class="copyright">
+        <p> &copy;2022Pixelphant.Allrightsreserved</p>
+     </div>
+     <div class="conditions">
+         <p>Privacy & Policy</p>
+         <p>Terms & Condition</p>
+     </div>
+    </section>
+  </footer>
+
+    <!-- javascript link -->
+    <script src="app.js"></script>
+</body>
+</html>
